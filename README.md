@@ -1,8 +1,12 @@
-# search bakeoff
+<p align="center">
+  <img src="./assets/chef.png" alt="Search Bakeoff chef mascot" width="220">
+</p>
 
-<img src="./assets/chef.png" alt="Search Bakeoff chef mascot" align="right" width="140">
+<p align="center">
+  Side-by-side full-text search engine comparison, runnable on your laptop.
+</p>
 
-Side-by-side full-text search engine comparison, runnable on your laptop.
+# Search Bakeoff
 
 Drop a query in, see how each engine answers it, in real time, against the same dataset. Built to make engine choice an empirical decision instead of a vibes-based one.
 
