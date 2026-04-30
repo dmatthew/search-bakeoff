@@ -35,6 +35,10 @@ Containers bind to host ports **7701** (Meilisearch) and **8109** (Typesense) in
 
 Type a query in the UI and watch all three engines respond side-by-side. Try misspellings ("yosemiti", "san fransicko") to see how typo tolerance differs.
 
+## Screenshot
+
+![Search Bakeoff UI comparing search results across engines](./assets/screenshot.png)
+
 ## Project layout
 
 ```
