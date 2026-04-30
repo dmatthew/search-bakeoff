@@ -1,0 +1,30 @@
+{
+  "name": "search-bakeoff",
+  "version": "0.1.0",
+  "description": "Side-by-side comparison of full-text search engines (Typesense, Meilisearch, SQLite FTS5) on real-world data.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "sync": "tsx src/cli/sync.ts",
+    "build:data": "tsx scripts/build-data.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fastify/static": "^7.0.4",
+    "better-sqlite3": "^11.3.0",
+    "fastify": "^4.28.1",
+    "meilisearch": "^0.45.0",
+    "typesense": "^1.8.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.0"
+  }
+}

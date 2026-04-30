@@ -1,0 +1,18 @@
+node_modules
+.env
+.env.local
+*.log
+
+# Engine state
+data/*.sqlite
+data/meili/
+data/typesense/
+
+# Build artifacts
+dist
+.tsbuildinfo
+
+# Editor
+.vscode
+.idea
+.DS_Store

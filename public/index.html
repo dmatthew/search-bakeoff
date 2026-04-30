@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>search bakeoff</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>search bakeoff</h1>
+        <span class="subtitle">side-by-side full-text search engine comparison</span>
+      </div>
+      <div class="meta">
+        <span id="dataset-info">loading dataset…</span>
+      </div>
+    </header>
+
+    <section class="query-bar">
+      <label for="query" class="visually-hidden">Search query</label>
+      <input
+        id="query"
+        type="search"
+        placeholder="type a query… (try misspellings)"
+        autocomplete="off"
+        autofocus
+      />
+      <label class="limit" for="limit">
+        <span>limit</span>
+        <input id="limit" type="number" min="1" max="25" value="10" aria-label="Result limit" />
+      </label>
+    </section>
+
+    <section id="suggestions" class="suggestions"></section>
+
+    <section
+      id="engines"
+      class="engines"
+      aria-live="polite"
+      aria-busy="false"
+    ></section>
+
+    <footer>
+      <a href="https://github.com/dmatthew/search-bakeoff" target="_blank" rel="noopener">source on github</a>
+      <span>·</span>
+      <span>MIT licensed</span>
+    </footer>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

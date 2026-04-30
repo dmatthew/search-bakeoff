@@ -1,0 +1,26 @@
+services:
+  meilisearch:
+    image: getmeili/meilisearch:v1.10
+    container_name: bakeoff-meilisearch
+    restart: unless-stopped
+    ports:
+      - "7701:7700"
+    environment:
+      MEILI_MASTER_KEY: dev-master-key
+      MEILI_NO_ANALYTICS: "true"
+      MEILI_ENV: development
+    volumes:
+      - ./data/meili:/meili_data
+
+  typesense:
+    image: typesense/typesense:27.1
+    container_name: bakeoff-typesense
+    restart: unless-stopped
+    ports:
+      - "8109:8108"
+    command:
+      - "--data-dir=/data"
+      - "--api-key=dev-typesense-key"
+      - "--enable-cors"
+    volumes:
+      - ./data/typesense:/data
