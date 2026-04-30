@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/chef.png" alt="Search Bakeoff chef mascot" width="220">
+  <img src="./assets/chef.png" alt="Search Bakeoff chef mascot" width="320">
 </p>
 
 <p align="center">
